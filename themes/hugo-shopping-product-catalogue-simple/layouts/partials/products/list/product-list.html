@@ -15,13 +15,16 @@
     </div>
     <script>
     var productVariants = null;
+	
 	{{ range .Data.Pages }}
 		const items = [];
 		items.push({"$id": "{{ .Params.title }}"});
 	{{ end }}
 	alert(items);
+	/*
 	mics.push("$item_list_view", {
 	  "$items": items
 	});
+	*/
     </script>
 </article>
