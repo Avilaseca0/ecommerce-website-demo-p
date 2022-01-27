@@ -20,7 +20,6 @@
 	{{ range .Data.Pages }}
 		items.push({"$id": "{{ .Params.title }}"});
 	{{ end }}
-	alert(items);
 	
 	mics.push("$item_list_view", {
 	  "$items": items
