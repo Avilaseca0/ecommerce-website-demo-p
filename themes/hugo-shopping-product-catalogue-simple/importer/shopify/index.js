@@ -25,7 +25,7 @@ function getFrontMatter(product) {
   let frontMatter = {}
   frontMatter.title = product.title;
   frontMatter.date = new Date().toISOString()
-  frontMatter.tags = product.tags;
+  //frontMatter.tags = product.tags;
   if(program.categoryConversion && program.categoryConversion[product.product_type.toLowerCase()]) {
     frontMatter.categories = [program.categoryConversion[product.product_type.toLowerCase()]];
   } else {
