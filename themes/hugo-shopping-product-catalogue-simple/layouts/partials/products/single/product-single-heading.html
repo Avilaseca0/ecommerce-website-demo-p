@@ -19,4 +19,9 @@
     var productComparePrice  = {{ .Params.comparePrice }}
     var productInStock = {{ .Params.inStock }}
     var productVariants = JSON.parse({{ .Params.variants | jsonify }})
+	mics.push("$item_view", {
+	  "$items": [
+		{ "$id": "{{ .Title }}" }
+	  ]
+	});
 </script>
