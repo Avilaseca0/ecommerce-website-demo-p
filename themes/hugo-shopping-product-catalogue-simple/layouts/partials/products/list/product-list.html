@@ -16,7 +16,7 @@
     <script>
     var productVariants = null;
 	{{ range .Data.Pages }}
-	alert("{{ .title }}");
+	alert("{{ .Params.title }}");
 	{{ end }}
     </script>
 </article>
