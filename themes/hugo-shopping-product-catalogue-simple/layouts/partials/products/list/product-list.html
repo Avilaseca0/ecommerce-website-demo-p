@@ -18,10 +18,9 @@
 	{{ range .Data.Pages }}
 		const items = [];
 		items.push({"$id": "{{ .Params.title }}"});
-		mics.push("$item_list_view", {
-		  "$items": items
-		  ]
-		});
 	{{ end }}
+	mics.push("$item_list_view", {
+	  "$items": items
+	});
     </script>
 </article>
