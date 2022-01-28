@@ -18,7 +18,7 @@
 	const items = [];
 	
 	{{ range .Data.Pages }}
-		items.push({"$id": "{{ .Params.title }}"});
+		items.push({"$id": "{{ .Params.id }}"});
 	{{ end }}
 	
 	mics.push("$item_list_view", {

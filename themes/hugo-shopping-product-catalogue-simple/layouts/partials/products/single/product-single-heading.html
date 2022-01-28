@@ -21,7 +21,7 @@
     var productVariants = JSON.parse({{ .Params.variants | jsonify }})
 	mics.push("$item_view", {
 	  "$items": [
-		{ "$id": "{{ .Title }}" }
+		{ "$id": "{{ .id }}" }
 	  ]
 	});
 </script>
